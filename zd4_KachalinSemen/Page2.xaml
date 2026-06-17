@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="zd4_KachalinSemen.Page2"
+             Title="Курсы валют">
+    <StackLayout Padding="30">
+        <Label Text="Центробанк РФ:" />
+        <Label Text="USD 80.000" Margin="10,10,10,10"/>
+        <Label Text="EUR 86.000" Margin="10,10,10,10"/>
+        <Label Text="Выберите дату:" Margin="170,-110,10,10"/>
+        <DatePicker x:Name="datePicker" Date="{x:Static sys:DateTime.Now}" Margin="165,0,10,10" HeightRequest="50" WidthRequest="100" BackgroundColor="Transparent"/>
+    </StackLayout>
+
+</ContentPage>

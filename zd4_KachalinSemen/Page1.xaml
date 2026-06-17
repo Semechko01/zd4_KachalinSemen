@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd4_KachalinSemen.Page1"
+             Title="Кредитный калькулятор">
+    <StackLayout>
+        <Label Text="Сумма кредита:" Margin="30, 30,10,10"/>
+        <Frame WidthRequest="190" HeightRequest="50" CornerRadius="0" BorderColor="Gray" Padding="0" HasShadow="False" HorizontalOptions="Center" BackgroundColor="Transparent"  Margin="150,-50,10,10">
+            <Entry x:Name ="SumCredit" HeightRequest="50" WidthRequest="190" Margin="10,0,10,10" HorizontalOptions="Start" MaxLength="9"/>
+        </Frame>
+        <Label Text="Срок (месяцев):" Margin="30, 30,10,10"/>
+        <Frame WidthRequest="190" HeightRequest="50" CornerRadius="0" BorderColor="Gray" Padding="0" HasShadow="False" HorizontalOptions="Center" BackgroundColor="Transparent"  Margin="150,-50,10,10">
+            <Entry x:Name ="CreditM" HeightRequest="50" WidthRequest="190" Margin="10,0,10,10" HorizontalOptions="Start" MaxLength="2"/>
+        </Frame>
+        <Label Text="Вид платежа:" Margin="30, 30,10,10"/>
+        <Frame WidthRequest="190" HeightRequest="50" CornerRadius="0" BorderColor="Gray" Padding="0" HasShadow="False" HorizontalOptions="Center" BackgroundColor="Transparent"  Margin="150,-50,10,10">
+            <Picker  Title="Выберете..." x:Name="MyPicker" FontSize="15"/>
+        </Frame>
+        <Label Text="Процентная ставка:" Margin="110, 10,10,10"/>
+        <Slider x:Name ="SliderPr" Minimum="0" Maximum="100" Value="5" MinimumTrackColor="Blue" MaximumTrackColor="LightBlue" ThumbColor="DarkBlue"/>
+        <Label x:Name ="Procent2" Text="5%" Margin="170, 10,10,10"/>
+        <Label x:Name ="LABEL1" Text="Ежемесячный платеж: ..." Margin="30, 30,10,10"/>
+        <Label x:Name ="LABEL2" Text="Общая сумма: ..." Margin="30, 30,10,10"/>
+        <Label x:Name ="LABEL3" Text="Переплата: ..." Margin="30, 30,10,10"/>
+    </StackLayout>
+
+
+</ContentPage>
